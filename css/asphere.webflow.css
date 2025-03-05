@@ -30,28 +30,38 @@
 }
 
 .heading-img {
-  width: 50vw;
+  width: auto;
   max-width: none;
-  height: auto;
+  height: 40vw;
   margin-left: 0;
   padding-left: 0;
   overflow: clip;
+  -webkit-mask-image: linear-gradient(to right, #0000 0%, #000 5% 90%, #0000 100%), linear-gradient(#0000 0%, #000 30% 85%, #0000 100%);
+  mask-image: linear-gradient(to right, #0000 0%, #000 5% 90%, #0000 100%), linear-gradient(#0000 0%, #000 30% 85%, #0000 100%);
+  -webkit-mask-composite: source-in;
+  mask-composite: intersect;
 }
 
 .heading-container {
+  z-index: 1;
   grid-column-gap: 2vw;
   grid-row-gap: 2vw;
   flex-flow: column;
-  width: 50%;
+  width: 50vw;
   height: auto;
-  margin-right: -10%;
+  margin-right: -10vw;
   padding-right: 0%;
   display: flex;
+  position: relative;
 }
 
 .heading-img-container {
-  width: 55%;
+  z-index: 0;
+  width: auto;
+  display: flex;
   position: relative;
+  top: 0;
+  right: 0;
 }
 
 .heading-text-1 {
@@ -105,7 +115,7 @@
 }
 
 .heading-text-container {
-  width: 99.9999%;
+  width: 100%;
   max-width: none;
   position: relative;
 }
@@ -329,15 +339,16 @@
   grid-row-gap: 5%;
   background-image: url('../images/heading_background.png');
   background-position: 0 0;
-  background-size: auto;
+  background-size: contain;
   justify-content: flex-start;
   align-items: center;
-  height: 50vw;
+  height: 40vw;
   margin-top: 5vw;
-  padding-top: 2%;
-  padding-bottom: 2%;
+  padding-top: 0%;
+  padding-bottom: 0%;
   padding-left: 5%;
   display: flex;
+  position: relative;
 }
 
 .home-sec-3 {
@@ -1337,24 +1348,25 @@
 
 .character-img-student {
   object-fit: contain;
-  width: 30%;
-  height: 15vw;
+  width: 50%;
+  height: 20vw;
   position: absolute;
-  inset: 0% 0% auto auto;
+  inset: 0% -3vw auto auto;
 }
 
 .ai-div-student {
-  grid-column-gap: 1.5vw;
-  grid-row-gap: 1.5vw;
+  grid-column-gap: 1vw;
+  grid-row-gap: 1vw;
   flex-flow: column;
   flex: 0 auto;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   width: 40vw;
-  height: 24vw;
+  height: 26vw;
   margin-top: -2vw;
   padding-top: 6vw;
-  padding-left: 2vw;
+  padding-left: 3vw;
+  padding-right: 2vw;
   text-decoration: none;
   display: flex;
   position: relative;
@@ -1388,7 +1400,7 @@
 .month-text {
   align-items: center;
   font-family: Inter, sans-serif;
-  font-size: 1vw;
+  font-size: 1.2vw;
   font-weight: 700;
   line-height: 200%;
 }
@@ -1419,7 +1431,7 @@
   object-fit: cover;
   border-radius: 2vw;
   width: 40vw;
-  height: 18vw;
+  height: 20vw;
   position: absolute;
   left: 0;
 }
@@ -1433,7 +1445,7 @@
   grid-template-columns: 1fr 1fr 1fr;
   grid-auto-columns: 1fr;
   place-items: center;
-  width: 25vw;
+  width: 35vw;
   height: 5vw;
   padding: 1vw 2vw;
   display: grid;
@@ -1452,6 +1464,7 @@
   flex: 0 auto;
   justify-content: center;
   align-items: center;
+  width: 6vw;
   height: 2vw;
   padding: 0 1vw;
   font-family: Inter, sans-serif;
@@ -1488,15 +1501,15 @@
 }
 
 .plan-div {
-  grid-column-gap: .5vw;
-  grid-row-gap: .5vw;
+  grid-column-gap: 1vw;
+  grid-row-gap: 1vw;
   border: .1vw solid #7a8582;
   border-radius: 1vw;
   flex-flow: column;
   justify-content: center;
   align-items: flex-start;
   width: 40vw;
-  height: 18vw;
+  height: 20vw;
   margin-top: 3vw;
   padding: .5vw 1vw;
   display: flex;
@@ -1514,6 +1527,7 @@
   height: 40vh;
   min-height: 35vw;
   max-height: 45vw;
+  margin-top: 3vw;
   margin-left: 0;
   padding-top: 0;
   padding-left: 10vw;
@@ -1521,12 +1535,14 @@
 }
 
 .calendar {
+  grid-column-gap: 2vw;
+  grid-row-gap: 2vw;
   background-color: #fff;
   border-radius: 11.697px;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  width: 45vw;
+  width: 40vw;
   max-width: none;
   text-decoration: none;
   display: flex;
@@ -1539,7 +1555,7 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  width: auto;
+  width: 100%;
   max-width: none;
   text-decoration: none;
   display: flex;
@@ -1547,10 +1563,10 @@
 }
 
 .calender-row {
-  grid-column-gap: 1vw;
+  grid-column-gap: 2vw;
   justify-content: flex-start;
   align-items: flex-start;
-  width: auto;
+  width: 100%;
   max-width: none;
   height: 4vw;
   text-decoration: none;
@@ -1565,10 +1581,10 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  width: 50vw;
+  width: 40vw;
   max-width: none;
-  padding-top: 1vw;
-  padding-left: 2vw;
+  padding-top: 0;
+  padding-left: 0;
   text-decoration: none;
   display: flex;
   overflow: hidden;
@@ -1760,7 +1776,7 @@
   margin-top: 0;
   margin-bottom: 0;
   font-family: Inter, sans-serif;
-  font-size: 1vw;
+  font-size: 1.2vw;
   font-weight: 500;
   line-height: 4vw;
   text-decoration: none;
@@ -1793,8 +1809,8 @@
 }
 
 .calender-selected-div-teacher {
-  grid-column-gap: 1vw;
-  grid-row-gap: 1vw;
+  grid-column-gap: 2vw;
+  grid-row-gap: 2vw;
   background-color: #d9d9d9;
   border-radius: 2vw;
   justify-content: flex-start;
@@ -1815,7 +1831,7 @@
   flex-flow: row;
   justify-content: space-between;
   align-items: center;
-  width: 30vw;
+  width: 100%;
   max-width: none;
   text-decoration: none;
   display: flex;
@@ -1853,7 +1869,7 @@
   color: #000;
   padding-left: 0;
   font-family: Inter, sans-serif;
-  font-size: 1.3vw;
+  font-size: 1.5vw;
   font-weight: 700;
   line-height: 100%;
 }
@@ -1890,7 +1906,7 @@
   min-height: 35vw;
   max-height: 45vw;
   margin-left: 0;
-  padding-top: 0;
+  padding-top: 2vw;
   padding-left: 10vw;
   display: flex;
 }
@@ -1924,8 +1940,8 @@
 }
 
 .calender-selected-div-student {
-  grid-column-gap: 1vw;
-  grid-row-gap: 1vw;
+  grid-column-gap: 2vw;
+  grid-row-gap: 2vw;
   background-color: #a9e8fd;
   border-radius: 2vw;
   justify-content: flex-start;
@@ -1936,9 +1952,9 @@
 .character-img-teacher {
   object-fit: cover;
   width: 40%;
-  height: 15vw;
+  height: 20vw;
   position: absolute;
-  inset: 5% 0% auto auto;
+  inset: -1vw 1vw auto auto;
 }
 
 .ai-div-teacher {
@@ -1949,7 +1965,7 @@
   justify-content: center;
   align-items: flex-start;
   width: 40vw;
-  height: 24vw;
+  height: 26vw;
   margin-top: -2vw;
   padding-top: 6vw;
   padding-left: 2vw;
@@ -3673,12 +3689,31 @@
 }
 
 .play-icon {
-  opacity: .8;
+  opacity: .7;
+  filter: invert(55%);
+  mix-blend-mode: normal;
   width: 5vw;
   height: 5vw;
   position: absolute;
-  bottom: 0;
-  right: 5%;
+  bottom: 1vw;
+  right: 2vw;
+}
+
+.ai-div-student-1 {
+  width: 100%;
+  margin-top: 0;
+}
+
+.ai-div-student-2 {
+  width: 100%;
+}
+
+.ai-heading-medium {
+  width: 60%;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 3.5vw;
+  line-height: 110%;
 }
 
 @media screen and (max-width: 991px) {
