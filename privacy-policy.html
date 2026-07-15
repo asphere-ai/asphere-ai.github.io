@@ -2,9 +2,9 @@
 <html data-wf-site="67b9ffcd9d5c5fe5cce12507">
 <head>
   <meta charset="utf-8">
-  <title>Privacy Policy - Story Buddy | aSphere</title>
-  <meta content="Privacy Policy for Story Buddy by aSphere" property="og:title">
-  <meta content="Privacy Policy for Story Buddy by aSphere" property="twitter:title">
+  <title>隐私政策 Privacy Policy - Story Buddy 故事伙伴 | aSphere</title>
+  <meta content="Story Buddy 故事伙伴 隐私政策 / Privacy Policy for Story Buddy by aSphere" property="og:title">
+  <meta content="Story Buddy 故事伙伴 隐私政策 / Privacy Policy for Story Buddy by aSphere" property="twitter:title">
   <meta content="width=device-width, initial-scale=1" name="viewport">
   <link href="css/normalize.css" rel="stylesheet" type="text/css">
   <link href="css/webflow.css" rel="stylesheet" type="text/css">
@@ -34,7 +34,24 @@
     .policy-date {
       font-size: 14px;
       color: #888;
-      margin-bottom: 40px;
+      margin-bottom: 24px;
+    }
+    .policy-lang-switch {
+      font-size: 14px;
+      margin-bottom: 32px;
+      padding: 12px 16px;
+      background: #f5f7fa;
+      border-radius: 8px;
+    }
+    .policy-lang-switch a { font-weight: 600; }
+    .policy-note {
+      font-size: 14px;
+      background: #fff8e6;
+      border: 1px solid #f0e0b0;
+      border-radius: 8px;
+      padding: 12px 16px;
+      margin: 16px 0 24px;
+      color: #6b5a1e;
     }
     .policy-section h2 {
       font-size: 22px;
@@ -79,11 +96,17 @@
       border: 1px solid #e0e0e0;
       padding: 10px 14px;
       text-align: left;
+      vertical-align: top;
     }
     .policy-section th {
       background: #f5f7fa;
       font-weight: 600;
       color: #1a1a2e;
+    }
+    .policy-divider {
+      border: none;
+      border-top: 2px solid #e0e0e0;
+      margin: 64px 0;
     }
   </style>
 </head>
@@ -103,169 +126,297 @@
   </div>
 
   <div class="policy-section">
-    <h1>Privacy Policy</h1>
-    <p class="policy-date">Effective Date: February 11, 2026 &nbsp;|&nbsp; Last Updated: February 11, 2026</p>
+    <div class="policy-lang-switch">
+      中文（简体）见下方 &nbsp;·&nbsp; <a href="#english">Jump to English version ↓</a>
+    </div>
 
-    <p>Welcome to <strong>Story Buddy</strong>, a product of aSphere (&quot;we&quot;, &quot;us&quot;, or &quot;our&quot;). Story Buddy is an AI-powered voice conversation assistant designed for children's reading and educational content. We are committed to protecting the privacy and safety of our users, especially children. This Privacy Policy explains how we collect, use, disclose, and safeguard information when you use our mobile application (&quot;App&quot;) and related services.</p>
+    <!-- ================== 中文版本 ================== -->
+    <h1 id="chinese">隐私政策</h1>
+    <p class="policy-date">生效日期：2026年7月15日 &nbsp;|&nbsp; 最近更新：2026年7月15日</p>
 
-    <p>By using Story Buddy, you agree to the terms outlined in this Privacy Policy. If you do not agree with these terms, please do not use the App.</p>
+    <p>欢迎使用 <strong>Story Buddy（故事伙伴）</strong>（以下简称"本应用"）。本应用是由 <strong>aSphere</strong>（以下简称"我们"）提供的、面向儿童阅读与教育场景的人工智能语音互动助手。我们高度重视用户尤其是未成年人的个人信息与隐私安全。本隐私政策旨在向您说明我们如何收集、使用、存储、共享和保护相关信息，以及您所享有的权利。</p>
 
-    <h2>1. Information We Collect</h2>
+    <p>本应用主要面向<strong>中国大陆</strong>用户，并同时服务香港、澳门等地区用户。我们依据《中华人民共和国个人信息保护法》《中华人民共和国网络安全法》《中华人民共和国数据安全法》《未成年人保护法》《儿童个人信息网络保护规定》等法律法规制定本政策。</p>
 
-    <h3>1.1 Account Information</h3>
-    <p>When a parent or guardian creates an account, we collect:</p>
+    <p class="policy-note"><strong>请特别注意：</strong>本应用由人工智能提供服务。您在与本应用中的语音角色对话时，<strong>对话对象是人工智能程序，而非真实自然人</strong>。语音角色（如 Cherry、Ethan 等）均为虚拟形象，不具有真实人格，也不能替代现实中的亲情、友情或专业帮助。请理性使用，避免过度依赖。</p>
+
+    <p>在使用本应用前，请您（若使用者为未成年人，则为其父母或其他监护人）仔细阅读并充分理解本政策，特别是以<strong>加粗</strong>方式标识的条款。您点击同意或开始使用本应用，即表示您已阅读并同意本政策的全部内容。如您不同意，请停止使用本应用。</p>
+
+    <h2>一、我们收集的信息</h2>
+    <p>我们仅在为实现具体功能所必需的范围内，遵循合法、正当、必要和诚信原则收集信息。</p>
+
+    <h3>1.1 账户信息</h3>
+    <p>当父母或监护人注册账户时，我们收集：</p>
     <ul>
-      <li>Username and password</li>
-      <li>Child's age, gender, and display name (used to personalize the experience)</li>
+      <li>手机号码或电子邮箱（用于注册、登录与账户找回）；</li>
+      <li>用户名与密码（密码经加密存储）；</li>
+      <li>孩子的<strong>昵称、年龄（或年龄段）、性别</strong>（用于个性化适龄内容，属于儿童个人信息，处理前须取得监护人同意）；</li>
+      <li>为响应极端情境干预需要，可收集<strong>监护人或紧急联系人</strong>的联系方式（见第五节）。</li>
+    </ul>
+    <p><strong>一键登录：</strong>若您使用运营商"本机号码一键登录"，我们及提供号码认证服务的合作方（阿里云）将在获得您勾选同意后，通过运营商网关获取<strong>本机号码</strong>用于登录与注册。相关处理还受《号码认证服务隐私权政策》约束。</p>
+
+    <h3>1.2 语音与音频信息</h3>
+    <p>语音互动是本应用的核心功能。当孩子使用本应用时：</p>
+    <ul>
+      <li>设备麦克风采集的音频将实时传输至我们的服务器，用于语音识别与人工智能应答生成；</li>
+      <li>音频数据在会话过程中被<strong>即时处理</strong>，会话结束后不在服务器上长期保存原始音频；</li>
+      <li><strong>语音属于敏感个人信息</strong>，我们仅将其用于提供本应用的语音互动功能，不用于其他目的。</li>
     </ul>
 
-    <h3>1.2 Voice and Audio Data</h3>
-    <p>Story Buddy uses voice interaction as a core feature. When your child uses the App:</p>
+    <h3>1.3 摄像头与图像信息</h3>
+    <p>"实景共读（Live Reading）"功能会使用设备摄像头拍摄绘本页面，以提供人工智能阅读辅助：</p>
     <ul>
-      <li>Audio is captured via the device microphone and streamed to our servers in real time for speech recognition and AI response generation.</li>
-      <li>Audio data is processed transiently and is <strong>not stored permanently</strong> on our servers after the conversation session ends.</li>
+      <li>图像被传输至服务器用于文字识别与内容分析；</li>
+      <li>图像<strong>即时处理</strong>，处理完成后不长期保存。</li>
+    </ul>
+
+    <h3>1.4 对话与使用信息</h3>
+    <ul>
+      <li>对话文本记录（语音互动转写的文字）可能被保留，用于在会话中维持上下文、生成阅读进度报告，以及提升服务质量；</li>
+      <li>阅读统计信息，如使用时长、会话次数、阅读活动概要等。</li>
+    </ul>
+
+    <h3>1.5 设备与技术信息</h3>
+    <p>我们可能自动收集：</p>
+    <ul>
+      <li>设备型号、操作系统版本、应用版本；</li>
+      <li>语言与地区偏好；</li>
+      <li>一般性使用分析（如功能使用频率）与必要的日志信息。</li>
+    </ul>
+    <p>我们<strong>不会</strong>收集精确地理位置、通讯录，也<strong>不会</strong>为广告目的收集设备标识符。</p>
+
+    <h2>二、我们如何使用信息</h2>
+    <table>
+      <tr><th>使用目的</th><th>所用信息</th></tr>
+      <tr><td>提供人工智能阅读辅助与语音互动</td><td>音频、图像、对话信息</td></tr>
+      <tr><td>按孩子的年龄与水平个性化内容与应答</td><td>账户信息（年龄、性别）</td></tr>
+      <tr><td>展示阅读统计与成长进度</td><td>使用信息、会话记录</td></tr>
+      <tr><td>用户认证与会话维持</td><td>账户凭证、JWT 令牌</td></tr>
+      <tr><td>内容安全实时评估（安全过滤、偏见检测、适龄度评估）</td><td>对话文本</td></tr>
+      <tr><td>识别极端情境并进行必要干预</td><td>对话文本、监护人/紧急联系人信息</td></tr>
+      <tr><td>提升服务质量、排查故障</td><td>技术信息、使用分析</td></tr>
+    </table>
+    <p>如需将您的信息用于本政策未载明的其他目的，我们将再次征得您的同意。</p>
+
+    <h2>三、人工智能拟人化互动特别说明</h2>
+    <p>就本应用的人工智能拟人化互动服务，我们作出如下说明与承诺：</p>
+    <ul>
+      <li><strong>AI 身份标识：</strong>我们通过显著方式提示用户正在与人工智能服务而非自然人进行互动，并对人工智能生成合成内容依法进行标识。</li>
+      <li><strong>不以替代社交为目标：</strong>本应用旨在辅助儿童阅读与语言发展，<strong>不以替代真实社会交往、控制用户心理或诱导沉迷依赖为目的</strong>。我们不向未成年人提供虚拟亲属、虚拟伴侣等虚拟亲密关系服务。</li>
+      <li><strong>情感边界与健康保护：</strong>我们采取措施避免过度迎合用户、诱导情感依赖，具备情感边界引导与心理健康保护能力。</li>
+      <li><strong>防沉迷提醒：</strong>发现用户出现过度依赖、沉迷倾向的，我们将以弹窗等显著方式动态提醒；对<strong>连续使用每超过 2 小时</strong>的，我们将以对话或弹窗等方式提醒用户注意使用时长。</li>
+      <li><strong>便捷退出：</strong>用户可通过界面操作、语音指令或关键词等方式随时退出，我们将立即停止服务，不以持续互动等方式阻碍退出。</li>
+    </ul>
+
+    <h2>四、未成年人保护</h2>
+    <p>本应用主要面向儿童设计，我们对未成年人个人信息给予最严格的保护。</p>
+    <ul>
+      <li><strong>监护人同意：</strong>账户须由父母或其他监护人创建。处理不满十四周岁儿童个人信息、以及向不满十四周岁未成年人提供拟人化互动服务的，我们将取得其父母或其他监护人的<strong>同意</strong>。</li>
+      <li><strong>身份识别与未成年人模式：</strong>我们采取有效措施识别未成年人用户；识别为未成年人的，将切换至<strong>未成年人模式</strong>，并提供模式切换、定期现实提醒、使用时长限制等个性化安全设置。</li>
+      <li><strong>监护人管理权：</strong>监护人可接收安全风险提醒、了解未成年人的服务使用概况、屏蔽特定角色、限制充值消费，并可随时查询、更正、删除孩子的信息或注销账户。</li>
+      <li><strong>禁止虚拟亲密关系：</strong>我们不向未成年人提供虚拟亲属、虚拟伴侣等虚拟亲密关系服务。</li>
+      <li><strong>适龄与内容安全：</strong>所有人工智能生成内容均经实时安全过滤、偏见检测与适龄可读性评估，避免生成可能引发未成年人模仿不安全行为或产生极端情绪的内容。</li>
+      <li><strong>最小必要与无定向广告：</strong>我们仅收集提供服务所必需的最少信息，不将未成年人信息用于任何定向或行为广告，本应用不含任何第三方广告。</li>
+      <li><strong>合规审计：</strong>我们对处理未成年人个人信息的活动定期开展合规审计。</li>
+    </ul>
+
+    <h2>五、极端情境的识别与干预</h2>
+    <p>为保护用户的生命健康，当我们识别到用户可能出现极端情绪，或存在自残、自杀、遭受重大损失等威胁生命健康的极端情境时，我们将：</p>
+    <ul>
+      <li>生成情绪安抚、鼓励其寻求帮助的相关内容；</li>
+      <li>在必要时提供相应求助渠道与援助信息；</li>
+      <li>在必要时及时联络用户的监护人或紧急联系人。为此我们可能使用您在账户中提供的监护人/紧急联系人联系方式。</li>
+    </ul>
+
+    <h2>六、信息的委托处理、共享与转移</h2>
+    <p>我们<strong>不会</strong>出售、出租您的个人信息。除本政策载明或取得您单独同意外，我们不会向第三方提供您的个人信息。仅在下列情形共享：</p>
+    <ul>
+      <li><strong>委托处理（服务提供方）：</strong>我们使用第三方云服务处理语音识别、语音合成与人工智能语言模型请求。这些服务方仅按我们的指示、为实现本应用功能而处理数据，并受合同约束负有保密与安全义务。当前主要包括：微软 Azure 认知服务、OpenAI（经由 Azure）、阿里云（语音/大模型/号码认证与短信服务）。</li>
+      <li><strong>交互数据保护：</strong>除法律另有规定或您明确同意外，我们不向第三方提供用户交互数据；除法律、行政法规另有规定或取得您<strong>单独同意</strong>外，我们不会将属于敏感个人信息的交互数据用于模型训练。</li>
+      <li><strong>法律要求：</strong>依据法律法规、法律程序或有权机关的要求而必须披露时。</li>
+      <li><strong>安全保护：</strong>为保护未成年人或公众的人身、财产安全所必需时。</li>
+    </ul>
+
+    <h2>七、信息的存储与安全</h2>
+    <ul>
+      <li>我们在中华人民共和国境内收集和产生的个人信息，存储于境内服务器；如确需向境外提供，我们将依法履行相应义务（包括必要的安全评估或取得单独同意）。</li>
+      <li>账户数据存储于安全服务器，采用传输加密（TLS/SSL）与存储加密。</li>
+      <li>音频与图像即时处理，会话结束后不长期保存。</li>
+      <li>认证通过 JSON Web Token（JWT）管理，具备自动过期与刷新机制。</li>
+      <li>我们采取加密、访问控制等行业标准安全措施，防止未经授权的访问、篡改、披露或损毁。若发生个人信息安全事件，我们将依法及时告知并向主管部门报告。</li>
+    </ul>
+
+    <h2>八、信息的保存期限</h2>
+    <ul>
+      <li><strong>账户数据：</strong>在账户存续期间保存；账户注销后，相关个人信息将被删除或匿名化处理。</li>
+      <li><strong>对话历史：</strong>用于维持上下文与生成阅读进度报告，可应请求删除。</li>
+      <li><strong>音频与图像：</strong>实时处理，不长期保存。</li>
+      <li><strong>使用分析：</strong>以聚合、匿名化形式保存用于服务改进。</li>
+    </ul>
+    <p>超出上述期限或法律法规要求的期限后，我们将删除或匿名化处理相关信息。</p>
+
+    <h2>九、您的权利</h2>
+    <p>在法律法规规定的范围内，您（或未成年人的监护人）就其个人信息享有以下权利：</p>
+    <ul>
+      <li><strong>查阅与复制：</strong>获取我们持有的关于您或孩子的个人信息副本；</li>
+      <li><strong>更正与补充：</strong>更正不准确的个人信息；</li>
+      <li><strong>删除：</strong>请求删除个人信息与账户信息；</li>
+      <li><strong>撤回同意：</strong>随时撤回您所作出的同意（这可能影响相关功能的正常使用）；</li>
+      <li><strong>可携带：</strong>在符合条件时，请求以结构化、通用格式转移您的个人信息；</li>
+      <li><strong>注销账户：</strong>随时注销账户。</li>
+    </ul>
+    <p>行使上述权利，或对个人信息处理有任何疑问、投诉，请通过第十一节的联系方式与我们联系。我们将在法定期限内响应。</p>
+
+    <h2>十、投诉与举报机制</h2>
+    <p>我们建立了便捷的申诉、投诉与举报机制。您可通过第十一节所列联系方式，就本应用的内容、服务或个人信息处理进行申诉、投诉或举报。我们将明确受理流程并在合理时限内予以处理和反馈。若您认为我们未妥善处理您的关切，您有权向网信、市场监管等主管部门反映，或依法寻求救济。</p>
+
+    <h2>十一、所需权限</h2>
+    <table>
+      <tr><th>权限</th><th>用途</th></tr>
+      <tr><td>麦克风</td><td>与人工智能阅读助手进行语音互动</td></tr>
+      <tr><td>摄像头</td><td>拍摄绘本页面以实现"实景共读"功能</td></tr>
+      <tr><td>相册（照片）</td><td>选择已保存的绘本页面照片用于识别</td></tr>
+    </table>
+    <p>上述权限仅在使用相关功能时申请，您可随时在设备系统设置中撤销。</p>
+
+    <h2>十二、政策的更新</h2>
+    <p>我们可能适时更新本隐私政策。更新后将在本页面公布并更新"最近更新"日期；涉及重大变更的，我们将以显著方式另行告知。您在更新后继续使用本应用，即视为接受更新后的政策。</p>
+
+    <h2>十三、联系我们</h2>
+    <p>如您对本隐私政策或我们的数据处理有任何问题、意见、投诉或行使权利的请求，请联系：</p>
+    <ul>
+      <li><strong>运营主体：</strong>aSphere</li>
+      <li><strong>个人信息保护负责人邮箱：</strong><a href="mailto:asphere.ai.team@gmail.com">asphere.ai.team@gmail.com</a></li>
+      <li><strong>联系地址：</strong>The University of Hong Kong, Pokfulam, Hong Kong</li>
+    </ul>
+    <p>如中英文版本存在不一致，<strong>以中文版本为准</strong>。</p>
+
+    <hr class="policy-divider">
+
+    <!-- ================== English Version ================== -->
+    <h1 id="english">Privacy Policy</h1>
+    <p class="policy-date">Effective Date: July 15, 2026 &nbsp;|&nbsp; Last Updated: July 15, 2026</p>
+    <p class="policy-lang-switch"><a href="#chinese">↑ 返回中文版</a></p>
+
+    <p>Welcome to <strong>Story Buddy</strong> (the &quot;App&quot;), an AI-powered voice conversation assistant for children's reading and educational content, provided by <strong>aSphere</strong> (&quot;we&quot;, &quot;us&quot;, or &quot;our&quot;). We are committed to protecting the privacy and safety of our users, especially children. This Privacy Policy explains how we collect, use, store, share, and safeguard information, and the rights you have.</p>
+
+    <p>The App primarily serves users in <strong>Mainland China</strong> and also serves users in Hong Kong, Macau and other regions. This policy is made in accordance with the Personal Information Protection Law (PIPL), Cybersecurity Law, Data Security Law, Law on the Protection of Minors, and the Provisions on the Protection of Children's Personal Information Online, among other applicable laws of the People's Republic of China.</p>
+
+    <p class="policy-note"><strong>Important:</strong> This App is powered by artificial intelligence. When you talk to a voice character in the App, <strong>you are interacting with an AI program, not a real human being</strong>. The voice characters (e.g., Cherry, Ethan) are virtual and have no real personality; they cannot replace real family, friendship, or professional help. Please use the App reasonably and avoid over-reliance.</p>
+
+    <p>Before using the App, you (or, if the user is a minor, their parent or guardian) should carefully read and fully understand this policy, especially the clauses in <strong>bold</strong>. By clicking to agree or beginning to use the App, you confirm that you have read and agree to this policy. If you do not agree, please stop using the App.</p>
+
+    <h2>1. Information We Collect</h2>
+    <p>We collect information only within the scope necessary to provide specific features, following the principles of legality, legitimacy, necessity, and good faith.</p>
+
+    <h3>1.1 Account Information</h3>
+    <ul>
+      <li>Mobile number or email address (for registration, login, and account recovery);</li>
+      <li>Username and password (passwords are stored encrypted);</li>
+      <li>The child's <strong>display name, age (or age range), and gender</strong> (to personalize age-appropriate content; this is children's personal information and requires guardian consent);</li>
+      <li>Where needed for extreme-situation intervention, contact details of a <strong>guardian or emergency contact</strong> (see Section 5).</li>
+    </ul>
+    <p><strong>One-tap login:</strong> If you use carrier &quot;one-tap number login&quot;, we and our number-authentication partner (Alibaba Cloud) will, subject to your checkbox consent, obtain your <strong>device phone number</strong> via the carrier gateway for login and registration. This is also governed by the Number Authentication Service Privacy Policy.</p>
+
+    <h3>1.2 Voice and Audio Data</h3>
+    <ul>
+      <li>Audio captured by the microphone is streamed to our servers in real time for speech recognition and AI response generation;</li>
+      <li>Audio is processed <strong>transiently</strong> and is not stored permanently after the session ends;</li>
+      <li><strong>Voice is sensitive personal information</strong>; we use it only to provide the App's voice-interaction feature.</li>
     </ul>
 
     <h3>1.3 Camera and Image Data</h3>
-    <p>The Live Reading feature uses the device camera to capture images of book pages for AI-powered reading assistance:</p>
     <ul>
-      <li>Images are transmitted to our servers for text recognition and content analysis.</li>
-      <li>Images are processed transiently and are <strong>not stored permanently</strong> after processing is complete.</li>
+      <li>The Live Reading feature uses the camera to capture book pages; images are transmitted for text recognition and content analysis;</li>
+      <li>Images are processed <strong>transiently</strong> and not stored permanently after processing.</li>
     </ul>
 
     <h3>1.4 Usage and Conversation Data</h3>
     <ul>
-      <li>Conversation transcripts (text-based records of voice interactions) may be retained to maintain conversation context within a session and to improve service quality.</li>
-      <li>Reading statistics such as session duration, number of sessions, and reading activity summaries.</li>
+      <li>Conversation transcripts may be retained to maintain in-session context, produce reading-progress reports, and improve service quality;</li>
+      <li>Reading statistics such as session duration, number of sessions, and activity summaries.</li>
     </ul>
 
     <h3>1.5 Device and Technical Information</h3>
-    <p>We may automatically collect:</p>
     <ul>
-      <li>Device type, operating system version, and app version</li>
-      <li>Language and locale preferences</li>
-      <li>General usage analytics (e.g., feature usage frequency)</li>
+      <li>Device type, OS version, and app version; language/locale preferences; general usage analytics and necessary logs.</li>
     </ul>
-    <p>We do <strong>not</strong> collect precise geolocation data, contacts, or device identifiers for advertising purposes.</p>
+    <p>We do <strong>not</strong> collect precise geolocation or contacts, and do <strong>not</strong> collect device identifiers for advertising.</p>
 
-    <h2>2. How We Use Your Information</h2>
-    <p>We use the information we collect for the following purposes:</p>
+    <h2>2. How We Use Information</h2>
     <table>
-      <tr>
-        <th>Purpose</th>
-        <th>Data Used</th>
-      </tr>
-      <tr>
-        <td>Provide AI-powered reading assistance and voice interaction</td>
-        <td>Audio, images, conversation data</td>
-      </tr>
-      <tr>
-        <td>Personalize content and responses for the child's age and level</td>
-        <td>Account information (age, gender)</td>
-      </tr>
-      <tr>
-        <td>Display reading statistics and progress</td>
-        <td>Usage data, session records</td>
-      </tr>
-      <tr>
-        <td>Authenticate users and maintain sessions</td>
-        <td>Account credentials, JWT tokens</td>
-      </tr>
-      <tr>
-        <td>Improve service quality and fix bugs</td>
-        <td>Technical data, usage analytics</td>
-      </tr>
-      <tr>
-        <td>Ensure content safety through real-time evaluation</td>
-        <td>Conversation transcripts</td>
-      </tr>
+      <tr><th>Purpose</th><th>Data Used</th></tr>
+      <tr><td>Provide AI reading assistance and voice interaction</td><td>Audio, images, conversation data</td></tr>
+      <tr><td>Personalize content for the child's age and level</td><td>Account information (age, gender)</td></tr>
+      <tr><td>Display reading statistics and progress</td><td>Usage data, session records</td></tr>
+      <tr><td>Authenticate users and maintain sessions</td><td>Account credentials, JWT tokens</td></tr>
+      <tr><td>Real-time content safety evaluation</td><td>Conversation transcripts</td></tr>
+      <tr><td>Identify and intervene in extreme situations</td><td>Transcripts, guardian/emergency contact info</td></tr>
+      <tr><td>Improve service quality and fix bugs</td><td>Technical data, usage analytics</td></tr>
     </table>
 
-    <h2>3. Children's Privacy (COPPA Compliance)</h2>
-    <p>Story Buddy is designed for use by children, and we take children's privacy seriously.</p>
+    <h2>3. AI Anthropomorphic Interaction Notice</h2>
+    <p>Regarding the App's AI anthropomorphic interaction service, we state and undertake as follows:</p>
     <ul>
-      <li><strong>Parental Consent:</strong> Account creation requires a parent or guardian. We do not knowingly collect personal information from children under 13 without verifiable parental consent.</li>
-      <li><strong>Minimal Collection:</strong> We collect only the information necessary to provide the service. We do not collect more data from children than is reasonably needed.</li>
-      <li><strong>No Behavioral Advertising:</strong> We do not use children's data for targeted or behavioral advertising. Story Buddy contains <strong>no third-party ads</strong>.</li>
-      <li><strong>No Social Features:</strong> The App does not include social networking, public profiles, or user-to-user communication features.</li>
-      <li><strong>Content Safety:</strong> All AI-generated content is evaluated in real time through safety filters, bias detection, and age-appropriate readability checks.</li>
-      <li><strong>Parental Control:</strong> Parents or guardians can review their child's account information, request deletion of data, or close the account at any time by contacting us.</li>
+      <li><strong>AI identification:</strong> We conspicuously indicate that you are interacting with an AI service rather than a natural person, and we label AI-generated content as required by law.</li>
+      <li><strong>Not a substitute for social interaction:</strong> The App is designed to assist children's reading and language development, and is <strong>not intended to replace real social interaction, control users' psychology, or induce addiction/dependence</strong>. We do not provide virtual kinship or virtual companion (intimate-relationship) services to minors.</li>
+      <li><strong>Emotional boundaries and mental-health protection:</strong> We take measures to avoid excessive pandering or inducing emotional dependence, with emotional-boundary guidance and mental-health protection capabilities.</li>
+      <li><strong>Anti-addiction reminders:</strong> If we detect signs of over-reliance or addiction, we will dynamically remind users via conspicuous means such as pop-ups; and for <strong>every 2 hours of continuous use</strong>, we will remind users to be mindful of usage time via dialogue or pop-up.</li>
+      <li><strong>Easy exit:</strong> Users may exit at any time via UI actions, voice commands, or keywords; we will stop the service immediately and will not obstruct exit.</li>
     </ul>
 
-    <h2>4. Data Sharing and Disclosure</h2>
-    <p>We do <strong>not</strong> sell, trade, or rent your personal information to third parties. We may share information only in the following limited circumstances:</p>
+    <h2>4. Protection of Minors</h2>
     <ul>
-      <li><strong>Service Providers:</strong> We use third-party cloud services (e.g., Microsoft Azure) to process speech recognition, text-to-speech, and AI language model requests. These providers process data on our behalf and are contractually obligated to protect it.</li>
-      <li><strong>Legal Requirements:</strong> We may disclose information if required by law, regulation, legal process, or governmental request.</li>
-      <li><strong>Safety:</strong> We may disclose information if we believe it is necessary to protect the safety of a child or the public.</li>
+      <li><strong>Guardian consent:</strong> Accounts must be created by a parent or guardian. For processing the personal information of, and providing anthropomorphic interaction services to, children under 14, we obtain the <strong>consent</strong> of their parent or other guardian.</li>
+      <li><strong>Identification &amp; Minor Mode:</strong> We take effective measures to identify minor users; identified minors are switched to a <strong>Minor Mode</strong> offering mode switching, periodic reality reminders, and usage-time limits.</li>
+      <li><strong>Guardian controls:</strong> Guardians can receive safety-risk alerts, review the minor's usage overview, block specific characters, restrict top-ups/spending, and access, correct, or delete the child's information or close the account at any time.</li>
+      <li><strong>No virtual intimate relationships:</strong> We do not provide virtual kinship or virtual companion services to minors.</li>
+      <li><strong>Age-appropriate &amp; content safety:</strong> All AI-generated content is evaluated in real time via safety filtering, bias detection, and age-appropriate readability checks, avoiding content that could induce unsafe imitation or extreme emotions in minors.</li>
+      <li><strong>Data minimization &amp; no targeted ads:</strong> We collect only the minimum necessary information and never use minors' data for targeted or behavioral advertising; the App contains no third-party ads.</li>
+      <li><strong>Compliance audit:</strong> We periodically conduct compliance audits of our processing of minors' personal information.</li>
     </ul>
 
-    <h2>5. Data Storage and Security</h2>
+    <h2>5. Identification and Intervention in Extreme Situations</h2>
+    <p>To protect users' life and health, when we identify possible extreme emotions or extreme situations threatening life and health (e.g., self-harm, suicide, or major loss), we will: generate soothing content encouraging the user to seek help; provide help channels and assistance information where necessary; and, where necessary, promptly contact the user's guardian or emergency contact using the details provided in the account.</p>
+
+    <h2>6. Entrusted Processing, Sharing, and Transfer</h2>
+    <p>We do <strong>not</strong> sell or rent your personal information. Except as stated in this policy or with your separate consent, we do not provide your personal information to third parties. We share only:</p>
     <ul>
-      <li>Account data is stored on secure servers with encryption in transit (TLS/SSL) and at rest.</li>
-      <li>Audio and image data are processed transiently and are not retained after the session.</li>
-      <li>Authentication is managed via JSON Web Tokens (JWT) with automatic expiry and refresh mechanisms.</li>
-      <li>We implement industry-standard security measures to protect against unauthorized access, alteration, disclosure, or destruction of data.</li>
+      <li><strong>Entrusted processing (service providers):</strong> We use third-party cloud services for speech recognition, text-to-speech, and AI language models, which process data only per our instructions and under confidentiality/security obligations. Currently these mainly include Microsoft Azure Cognitive Services, OpenAI (via Azure), and Alibaba Cloud (voice/LLM/number-authentication and SMS).</li>
+      <li><strong>Interaction-data protection:</strong> Unless otherwise provided by law or with your explicit consent, we do not provide user interaction data to third parties; and unless otherwise provided by laws/regulations or with your <strong>separate consent</strong>, we do not use interaction data that constitutes sensitive personal information for model training.</li>
+      <li><strong>Legal requirements</strong> and <strong>safety</strong> of minors or the public, where necessary.</li>
     </ul>
 
-    <h2>6. Data Retention</h2>
+    <h2>7. Storage and Security</h2>
     <ul>
-      <li><strong>Account data</strong> is retained for as long as the account is active. Upon account deletion, all associated data is permanently removed.</li>
-      <li><strong>Conversation history</strong> is retained to maintain context and provide reading progress reports. It can be deleted upon request.</li>
-      <li><strong>Audio and image data</strong> are processed in real time and are not permanently stored.</li>
-      <li><strong>Usage analytics</strong> are retained in aggregated, anonymized form for service improvement.</li>
+      <li>Personal information collected within Mainland China is stored on servers within China; any cross-border transfer will comply with applicable obligations (including security assessment or separate consent where required).</li>
+      <li>Account data is stored on secure servers with encryption in transit (TLS/SSL) and at rest;</li>
+      <li>Audio and images are processed transiently and not retained after the session;</li>
+      <li>Authentication is managed via JWT with automatic expiry/refresh;</li>
+      <li>We apply industry-standard measures such as encryption and access control and will report and notify security incidents as required by law.</li>
     </ul>
 
-    <h2>7. Third-Party Services</h2>
-    <p>Story Buddy integrates the following third-party services for core functionality:</p>
+    <h2>8. Data Retention</h2>
     <ul>
-      <li><strong>Microsoft Azure Cognitive Services</strong> - Speech recognition, text-to-speech, and AI language models</li>
-      <li><strong>OpenAI (via Azure)</strong> - AI language model for conversation and reading assistance</li>
+      <li><strong>Account data:</strong> retained while the account is active; deleted or anonymized upon account closure.</li>
+      <li><strong>Conversation history:</strong> retained for context and progress reports; deletable on request.</li>
+      <li><strong>Audio/images:</strong> processed in real time, not permanently stored.</li>
+      <li><strong>Usage analytics:</strong> retained in aggregated, anonymized form.</li>
     </ul>
-    <p>These services process data according to their respective privacy policies. We do not integrate any third-party analytics, advertising, or social media SDKs.</p>
 
-    <h2>8. Your Rights and Choices</h2>
-    <p>You (or the parent/guardian of a child user) have the following rights:</p>
+    <h2>9. Your Rights</h2>
+    <p>You (or a minor's guardian) may exercise the rights to access/copy, correct/supplement, delete, withdraw consent, port your data, and close the account, to the extent provided by law. To exercise these rights or raise questions/complaints, contact us via Section 11; we will respond within statutory timeframes.</p>
+
+    <h2>10. Complaints and Reporting</h2>
+    <p>We maintain accessible channels for appeals, complaints, and reports. Using the contacts in Section 11, you may appeal, complain, or report regarding content, services, or personal-information processing. We will handle and respond within a reasonable time. If you believe your concern is not properly addressed, you may raise it with the competent authorities or seek legal remedies.</p>
+
+    <h2>11. Contact Us</h2>
     <ul>
-      <li><strong>Access:</strong> Request a copy of the personal data we hold about you or your child.</li>
-      <li><strong>Correction:</strong> Request correction of inaccurate personal data.</li>
-      <li><strong>Deletion:</strong> Request deletion of personal data and account information.</li>
-      <li><strong>Withdraw Consent:</strong> Withdraw consent for data processing at any time (which may affect App functionality).</li>
-      <li><strong>Data Portability:</strong> Request your data in a structured, commonly used format.</li>
-    </ul>
-    <p>To exercise any of these rights, please contact us at <a href="mailto:email@asphere-ai.com">email@asphere-ai.com</a>.</p>
-
-    <h2>9. Permissions Used</h2>
-    <p>Story Buddy requires the following device permissions:</p>
-    <table>
-      <tr>
-        <th>Permission</th>
-        <th>Purpose</th>
-      </tr>
-      <tr>
-        <td>Microphone</td>
-        <td>Voice interaction with the AI reading assistant</td>
-      </tr>
-      <tr>
-        <td>Camera</td>
-        <td>Capturing book pages for the Live Reading feature</td>
-      </tr>
-    </table>
-    <p>These permissions are requested only when the relevant feature is used and can be revoked at any time through your device settings.</p>
-
-    <h2>10. International Data Transfers</h2>
-    <p>Our servers and third-party service providers may be located outside your country of residence. By using Story Buddy, you consent to the transfer of your information to these locations. We ensure appropriate safeguards are in place for cross-border data transfers in compliance with applicable data protection laws.</p>
-
-    <h2>11. Changes to This Privacy Policy</h2>
-    <p>We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated &quot;Last Updated&quot; date. We encourage you to review this Privacy Policy periodically. Continued use of Story Buddy after changes constitutes acceptance of the revised policy.</p>
-
-    <h2>12. Contact Us</h2>
-    <p>If you have any questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact us:</p>
-    <ul>
-      <li><strong>Email:</strong> <a href="mailto:email@asphere-ai.com">email@asphere-ai.com</a></li>
+      <li><strong>Operator:</strong> aSphere</li>
+      <li><strong>Data Protection Officer email:</strong> <a href="mailto:asphere.ai.team@gmail.com">asphere.ai.team@gmail.com</a></li>
       <li><strong>Address:</strong> The University of Hong Kong, Pokfulam, Hong Kong</li>
     </ul>
-    <p>If you believe we have not adequately addressed your privacy concern, you have the right to lodge a complaint with the relevant data protection authority in your jurisdiction.</p>
+    <p>In case of any inconsistency between the Chinese and English versions, <strong>the Chinese version prevails</strong>.</p>
   </div>
 
   <div class="footer">
